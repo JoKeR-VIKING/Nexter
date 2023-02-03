@@ -1,7 +1,6 @@
 .header
 {
     background-color: $color-grey-dark-1;
-    grid-row: 1 / 2;
     grid-column: full-start / col-end 6;
 
     background-image: linear-gradient(rgba($color-secondary, 0.93), rgba($color-secondary, 0.93)), url("../img/hero.jpeg");
@@ -63,5 +62,13 @@
     {
         justify-self: center;
         align-self: center;
+    }
+}
+
+@media only screen and (max-width: $bp-small)
+{
+    .header
+    {
+        grid-column: 1 / -1;
     }
 }
